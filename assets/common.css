@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './colors.css';
+
+
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Merriweather',cursive;
+    
+}
+
+body{
+    background-color: var(--orange);
+  /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbeautiful%2520wallpaper%2F&psig=AOvVaw34w-6XIbQIL79OiZYjsLUg&ust=1729786833428000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD40aT0pIkDFQAAAAAdAAAAABAY"); */
+    min-height: calc(100vh-5rem);
+    /* position: relative; */
+    padding-bottom: 5rem !important;
+    display: inline-block;
+    width:100%;
+}
+
+nav{
+    background-color: var(--yellow);
+}
+
+nav .title{
+    padding:0.75rem;
+    padding-left: 0px;
+    color:var(--saffron);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+}
+
+nav .logo{
+    height:1.75rem;
+    margin-left: 0.75rem;
+    
+}
+nav form{
+    display: inline;
+    float:right;
+    padding-top: 0.75rem;/*13px*/
+    padding-right: 0.75rem;
+}
+
+nav .search{
+    font-family: 'Merriweather',cursive;
+    padding:0.25rem 0.75rem;
+    
+}
+
+nav .search:focus{
+    outline: none !important;
+    border:2px solid var(--saffron);
+}
+
+.heading{
+    text-align: center;
+    margin: 1.75rem;
+}
+
+footer{
+    position:fixed;
+    left:0;
+    bottom: 0;
+    font-size: 20px;
+    background-color: var(--pink);
+    width:calc(100% - 1.5rem);
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* footer{
+    position: fixed;
+  left: 0;
+  /* bottom: 0;
+  width: 100%; */
+  /* background-color: red;
+  color: white; */
+  /* text-align: center;
+    
+}  */
+@media screen and (max-width:830px){
+footer h1{
+    display: none;
+}
+footer{
+    flex-direction: column;
+    gap:0.75rem;
+    text-align: center;
+}
+body{
+    min-height: calc(100vh - 10rem) !important;
+    padding-bottom: 10rem !important;
+}
+}
+
+@media screen and (max-width:750px){
+    nav{
+        display: inline-block;
+        width:100%;
+    }
+
+    nav form{
+        float:none;
+       display: flex;
+       flex-wrap: wrap;
+       gap:1.0rem;
+       justify-content: center;
+       margin-bottom: 0.75rem;
+    }
+}
+
+.heading{
+    text-decoration: underline;
+}
